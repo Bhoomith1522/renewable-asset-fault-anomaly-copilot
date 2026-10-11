@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "rows_scanned": 240,
+    "assets_scanned": 2,
+    "anomalies_flagged": 10,
+    "anomaly_rate_pct": 4.17,
+    "asset_summary": [
+      {
+        "asset_id": "SOLAR_INV_01",
+        "rows_scanned": 120,
+        "anomalies_flagged": 5
+      },
+      {
+        "asset_id": "WTG_07",
+        "rows_scanned": 120,
+        "anomalies_flagged": 5
+      }
+    ]
+  },
+  "sample_anomalies": [
+    {
+      "timestamp_id": 14,
+      "asset_id": "SOLAR_INV_01",
+      "hour": 14,
+      "irradiance_wm2": 692.8,
+      "wind_speed_ms": 8.79,
+      "temperature_c": 41.67,
+      "vibration_mm_s": 1.49,
+      "power_mw": 1.316,
+      "model_score": 0.00187,
+      "model_flag": true,
+      "is_anomaly": true,
+      "severity": "medium",
+      "evidence": "the multivariate telemetry pattern is unusual relative to this small dataset",
+      "recommended_checks": [
+        "Compare adjacent readings and similar operating conditions",
+        "Verify sensor quality and check the asset event/alarm log"
+      ]
+    },
+    {
+      "timestamp_id": 67,
+      "asset_id": "SOLAR_INV_01",
+      "hour": 19,
+      "irradiance_wm2": 0.0,
+      "wind_speed_ms": 8.33,
+      "temperature_c": 53.48,
+      "vibration_mm_s": 3.86,
+      "power_mw": 0.0,
+      "model_score": 0.13907,
+      "model_flag": true,
+      "is_anomaly": true,
+      "severity": "high",
+      "evidence": "temperature is elevated at 53.5 \u00b0C; vibration is elevated at 3.86 mm/s",
+      "recommended_checks": [
+        "Verify the temperature sensor and recent thermal trend",
+        "Inspect cooling/ventilation and review the asset alarm log",
+        "Check vibration sensor mounting and compare with the asset's normal baseline",
+        "Inspect for looseness, imbalance or bearing-related alarms using site procedures"
+      ]
+    },
+    {
+      "timestamp_id": 68,
+      "asset_id": "SOLAR_INV_01",
+      "hour": 20,
+      "irradiance_wm2": 0.0,
+      "wind_speed_ms": 8.31,
+      "temperature_c": 48.55,
+      "vibration_mm_s": 3.98,
+      "power_mw": 0.0,
+      "model_score": 0.10947,
+      "model_flag": true,
+      "is_anomaly": true,
+      "severity": "high",
+      "evidence": "temperature is elevated at 48.5 \u00b0C; vibration is elevated at 3.98 mm/s",
+      "recommended_checks": [
+        "Verify the temperature sensor and recent thermal trend",
+        "Inspect cooling/ventilation and review the asset alarm log",
+        "Check vibration sensor mounting and compare with the asset's normal baseline",
+        "Inspect for looseness, imbalance or bearing-related alarms using site procedures"
+      ]
+    }
+  ],
+  "note": "Examples from the bundled synthetic dataset. Not ground-truth fault diagnoses."
+}
