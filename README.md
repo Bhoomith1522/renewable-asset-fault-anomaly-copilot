@@ -124,3 +124,14 @@ No secrets are needed for the current baseline. If an external LLM is added late
 - No timestamp cadence, asset metadata, rated capacity, maintenance logs, curtailment status, or environmental context beyond the supplied columns.
 - No authentication, authorization, audit logging, model monitoring, drift detection, or role-based workflows.
 - Operator recommendations require review against manufacturer guidance and site safety procedures.
+
+## Screenshots
+
+### Dashboard Overview
+![Dashboard Overview](screenshots/Dashboard%20overview.png)
+
+### Anomaly Detection Results
+![Anomaly Detection Results](screenshots/Anomaly%20detection%20results.png)
+
+### API Documentation
+![API Documentation](screenshots/API%20documentation.png)
